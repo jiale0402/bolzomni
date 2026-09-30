@@ -1,0 +1,166 @@
+{
+  "reference_type": "Derived native-equivalent structural loss, not a separate new evaluation",
+  "basis": [
+    "Feedback output projections/bias initialize to zero",
+    "Archived step-0 teacher MSE equals zero for all 40 fixed probes",
+    "At initialization, denoiser output is independent of added chemical state",
+    "Same resolved atoms, target alignment, noise, and structural-loss formula"
+  ],
+  "scope": "Fixed-probe structural losses only; not full native generation equivalence",
+  "not_applicable": [
+    "Added sequence-head CE",
+    "Omni total containing added sequence-head CE"
+  ],
+  "source_sha256": {
+    "experiments\\native_condition_poc\\runs\\native-1729\\metrics.jsonl": "991bfdd5bee3702b2c7dfd3f024ca1129954be02dab15f416af1abbf059651ae",
+    "experiments\\native_condition_poc\\runs\\native-1729\\validation-0.json": "61ec1958e50b741fc405c198c2146f53eafb17318ef997e7d50353de1b8629f0",
+    "experiments\\native_condition_poc\\results\\mechanism_audit.json": "1e0e643e74c86af9caecb0193d4cbd0b0b502b4c615cae2838a30c20fcf10000",
+    "experiments\\omni_joint\\model.py": "f88ad8306e52a2816373f9691fee2f0cf9375f0d719980e15e18879925663f50",
+    "experiments\\native_condition_poc\\native_flow.py": "1015d4d15e678e491df32614ba9fbe6eef42e5479bf70d7a76f033c23b6ba2d7"
+  },
+  "steps": [
+    0,
+    100,
+    200,
+    300,
+    400
+  ],
+  "curves": {
+    "folding": {
+      "geometry": {
+        "train": {
+          "native_reference": 0.27460520318709314,
+          "omni": [
+            0.27460520318709314,
+            0.2743227742612362,
+            0.2742523367051035,
+            0.2743345987983048,
+            0.27383117680437863
+          ]
+        },
+        "validation": {
+          "native_reference": 0.30697530999896117,
+          "omni": [
+            0.30697530999896117,
+            0.3064635300543159,
+            0.30634538587764837,
+            0.3065023001108784,
+            0.3061062676133588
+          ]
+        }
+      },
+      "coordinate": {
+        "train": {
+          "native_reference": 0.008538428461179137,
+          "omni": [
+            0.008538428461179137,
+            0.008517589420080185,
+            0.008490126812830567,
+            0.00853290082886815,
+            0.008432883070781827
+          ]
+        },
+        "validation": {
+          "native_reference": 0.014060137124033645,
+          "omni": [
+            0.014060137124033645,
+            0.013943200698122382,
+            0.013892216054955497,
+            0.013943615165771917,
+            0.013852959615178406
+          ]
+        }
+      },
+      "smooth_lddt": {
+        "train": {
+          "native_reference": 0.266066774725914,
+          "omni": [
+            0.266066774725914,
+            0.265805184841156,
+            0.26576220989227295,
+            0.26580169796943665,
+            0.2653982937335968
+          ]
+        },
+        "validation": {
+          "native_reference": 0.2929151728749275,
+          "omni": [
+            0.2929151728749275,
+            0.29252032935619354,
+            0.29245316982269287,
+            0.2925586849451065,
+            0.2922533079981804
+          ]
+        }
+      }
+    },
+    "design": {
+      "geometry": {
+        "train": {
+          "native_reference": 0.374937528045848,
+          "omni": [
+            0.374937528045848,
+            0.3735777197871357,
+            0.3723420946043916,
+            0.371419389906805,
+            0.37073383515235037
+          ]
+        },
+        "validation": {
+          "native_reference": 0.39564182376489043,
+          "omni": [
+            0.39564182376489043,
+            0.3953870164696127,
+            0.39553748560138047,
+            0.39568709558807313,
+            0.3954479353269562
+          ]
+        }
+      },
+      "coordinate": {
+        "train": {
+          "native_reference": 0.024220519931986928,
+          "omni": [
+            0.024220519931986928,
+            0.02403577254153788,
+            0.023795619432348758,
+            0.023656268778722733,
+            0.02354268019553274
+          ]
+        },
+        "validation": {
+          "native_reference": 0.027201355900615454,
+          "omni": [
+            0.027201355900615454,
+            0.0271886030677706,
+            0.02718236413784325,
+            0.027280639624223113,
+            0.027244824334047735
+          ]
+        }
+      },
+      "smooth_lddt": {
+        "train": {
+          "native_reference": 0.3507170081138611,
+          "omni": [
+            0.3507170081138611,
+            0.34954194724559784,
+            0.34854647517204285,
+            0.3477631211280823,
+            0.3471911549568176
+          ]
+        },
+        "validation": {
+          "native_reference": 0.368440467864275,
+          "omni": [
+            0.368440467864275,
+            0.3681984134018421,
+            0.3683551214635372,
+            0.36840645596385,
+            0.3682031109929085
+          ]
+        }
+      }
+    }
+  }
+}

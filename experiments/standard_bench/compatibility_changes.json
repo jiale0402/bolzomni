@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/gpfs/projects/p53252/jck3114/boltz_omni_poc/experiments/standard_bench/vendor/MotifBench/Scaffold-Lab/analysis/utils.py",
+    "before_sha256": "a74339444487c533a5c9e9ad5088e15049cda390f41597de935ab021c7b0ee87",
+    "after_sha256": "d5b59be9a882227b6f67f3df86755a4663858f2b5e593d325d4f7e5e0ecd078f"
+  },
+  {
+    "path": "/gpfs/projects/p53252/jck3114/boltz_omni_poc/experiments/standard_bench/vendor/MotifBench/Scaffold-Lab/analysis/plot.py",
+    "before_sha256": "d2a5cf8af3b9278eeb30714f61619efbb744b36c1922fe34a9149fd676eeaf83",
+    "after_sha256": "1f85b37b870033a33907abc2926713b664fec362a7d6ccb51c8720fc41d82f5e"
+  },
+  {
+    "path": "/projects/p53252/jck3114/boltz_omni_poc/experiments/standard_bench/runtime/lib/python3.11/site-packages/esm/esmfold/v1/esmfold.py",
+    "before_sha256": "2a6ba6b1da164a666f846045251adcdb68015197585065b7f4689860076a292a",
+    "after_sha256": "5344532d6012d4950ccfe4f5f43996a6d3154e012e4eb4915b7d1de095531a4b"
+  },
+  {
+    "path": "/projects/p53252/jck3114/boltz_omni_poc/experiments/standard_bench/runtime/lib/python3.11/site-packages/esm/esmfold/v1/trunk.py",
+    "before_sha256": "8d5c82c0b5c3422d493c2144f63d20bf23371e0142b5faf52617ba9dc1f58139",
+    "after_sha256": "c7047c22766ff0e644c55cf6774cf7c0ec84fde7f8e0ab24bb6c7a447e29c5cc"
+  },
+  {
+    "path": "/gpfs/projects/p53252/jck3114/boltz_omni_poc/experiments/standard_bench/vendor/openfold/openfold/utils/kernel/attention_core.py",
+    "before_sha256": "d392bc78cf800289ff173e2b6597a3ca4da604ee337ad52382c8a564d7483b73",
+    "after_sha256": "a227a72cde910295ed4c2b2903c6efe0df34b4959cdab908c93441a44aeb6639"
+  },
+  {
+    "path": "/gpfs/projects/p53252/jck3114/boltz_omni_poc/experiments/standard_bench/vendor/openfold/openfold/utils/seed.py",
+    "before_sha256": "72f686b676c2491a85edc22bc740bf92f18aa1a55fc5f2feebb579f7f8f756c8",
+    "after_sha256": "acea2d213be6c640e90dbcc55edc63e25baedc8be7494b1a0df8c3e3adf6f7c2"
+  },
+  {
+    "path": "/gpfs/projects/p53252/jck3114/boltz_omni_poc/experiments/standard_bench/vendor/openfold/openfold/model/structure_module.py",
+    "before_sha256": "59e615a7d71fadda4333dbd9015cf4934cdc50dd7133a55a56d070dc19c7428f",
+    "after_sha256": "43166f373efe40ed3172dd5f08c1f6f031787704c530aefa7b905d6d0faaedbb"
+  },
+  {
+    "path": "/projects/p53252/jck3114/boltz_omni_poc/experiments/standard_bench/runtime/lib/python3.11/site-packages/esm/esmfold/v1/esmfold.py",
+    "before_sha256": "5344532d6012d4950ccfe4f5f43996a6d3154e012e4eb4915b7d1de095531a4b",
+    "after_sha256": "78e581bac2eb15c1256b42e7f1e90bbc9e5fbe2c82c2447508decc94624aee7d"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "source": "RFdiffusion Supplementary Methods Table 9, PDF page 85 (printed page 84)",
+  "source_url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/76adfaaa-7d2b-48be-88a5-90ef91113669/content",
+  "sequence_policy": "Keep supplied motif identities fixed for both models; generate own scaffold sequences. No ProteinMPNN replacement.",
+  "tasks": [
+    {"id":"1PRW","pdb":"1PRW","contig":"5-20/A16-35/10-25/A52-71/5-20","length":[60,105]},
+    {"id":"1BCF","pdb":"1BCF","contig":"8-15/A92-99/16-30/A123-130/16-30/A47-54/16-30/A18-25/8-15","length":[96,152]},
+    {"id":"5TPN","pdb":"5TPN","contig":"10-40/A163-181/10-40","length":[50,75]},
+    {"id":"5IUS","pdb":"5IUS","contig":"0-30/A119-140/15-40/A63-82/0-30","length":[57,142]},
+    {"id":"3IXT","pdb":"3IXT","contig":"10-40/P254-277/10-40","length":[50,75]},
+    {"id":"5YUI","pdb":"5YUI","contig":"5-30/A93-97/5-20/A118-120/10-35/A198-200/10-30","length":[50,100]},
+    {"id":"1QJG","pdb":"1QJG","contig":"10-20/A38/15-30/A14/15-30/A99/10-20","length":[53,103]},
+    {"id":"1YCR","pdb":"1YCR","contig":"10-40/B19-27/10-40","length":[40,100]},
+    {"id":"2KL8","pdb":"2KL8","contig":"A1-7/20/A28-79","length":[79,79]},
+    {"id":"7MRX-60","pdb":"7MRX","contig":"0-38/B25-46/0-38","length":[60,60]},
+    {"id":"7MRX-85","pdb":"7MRX","contig":"0-63/B25-46/0-63","length":[85,85]},
+    {"id":"7MRX-128","pdb":"7MRX","contig":"0-122/B25-46/0-122","length":[128,128]},
+    {"id":"4JHW","pdb":"4JHW","contig":"10-25/F196-212/15-30/F63-69/10-25","length":[60,90]},
+    {"id":"4ZYP","pdb":"4ZYP","contig":"10-40/A422-436/10-40","length":[30,50]},
+    {"id":"5WN9","pdb":"5WN9","contig":"10-40/A170-189/10-40","length":[35,50]},
+    {"id":"6VW1","pdb":"6VW1","target":"E400-510","contig":"20-30/A24-42/4-10/A64-82/0-5","length":[62,83]},
+    {"id":"5TRV-short","pdb":"5TRV","contig":"0-35/A45-65/0-35","length":[56,56]},
+    {"id":"5TRV-med","pdb":"5TRV","contig":"0-65/A45-65/0-65","length":[86,86]},
+    {"id":"5TRV-long","pdb":"5TRV","contig":"0-95/A45-65/0-95","length":[116,116]},
+    {"id":"6E6R-short","pdb":"6E6R","contig":"0-35/A23-35/0-35","length":[48,48]},
+    {"id":"6E6R-med","pdb":"6E6R","contig":"0-65/A23-35/0-65","length":[78,78]},
+    {"id":"6E6R-long","pdb":"6E6R","contig":"0-95/A23-35/0-95","length":[108,108]},
+    {"id":"6EXZ-short","pdb":"6EXZ","contig":"0-35/A28-42/0-35","length":[50,50]},
+    {"id":"6EXZ-med","pdb":"6EXZ","contig":"0-65/A28-42/0-65","length":[80,80]},
+    {"id":"6EXZ-long","pdb":"6EXZ","contig":"0-95/A28-42/0-95","length":[110,110]}
+  ]
+}

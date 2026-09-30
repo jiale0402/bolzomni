@@ -1,0 +1,177 @@
+{
+  "folding": {
+    "best5_ca_lddt": {
+      "native": 0.5978507736943226,
+      "omni": 0.5971331642675939,
+      "delta": -0.0007176094267287367,
+      "ci95": [
+        -0.007289268574318358,
+        0.0041060413360058685
+      ],
+      "wins": 5,
+      "ties": 0,
+      "losses": 3,
+      "units": 8
+    },
+    "best5_all_atom_lddt": {
+      "native": 0.5406523086130619,
+      "omni": 0.5404499433934689,
+      "delta": -0.0002023652195930481,
+      "ci95": [
+        -0.0032861513085663315,
+        0.003027707058936357
+      ],
+      "wins": 3,
+      "ties": 0,
+      "losses": 5,
+      "units": 8
+    },
+    "best5_tm_score": {
+      "native": 0.5957024082861375,
+      "omni": 0.5918382366682986,
+      "delta": -0.0038641716178389393,
+      "ci95": [
+        -0.012107603746339832,
+        0.004522749228819723
+      ],
+      "wins": 5,
+      "ties": 0,
+      "losses": 3,
+      "units": 8
+    },
+    "mean5_ca_lddt": {
+      "native": 0.5849210932773473,
+      "omni": 0.5856792353328326,
+      "delta": 0.0007581420554853141,
+      "ci95": [
+        -0.0011349421226534498,
+        0.0031490449069845813
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 4,
+      "units": 8
+    },
+    "mean5_all_atom_lddt": {
+      "native": 0.5288587391376496,
+      "omni": 0.5286387734115123,
+      "delta": -0.00021996572613715987,
+      "ci95": [
+        -0.0020720148086547656,
+        0.001857220046222193
+      ],
+      "wins": 3,
+      "ties": 0,
+      "losses": 5,
+      "units": 8
+    },
+    "mean5_tm_score": {
+      "native": 0.575004101000522,
+      "omni": 0.5744690798865353,
+      "delta": -0.0005350211139867542,
+      "ci95": [
+        -0.0037380330087271804,
+        0.002165565852130308
+      ],
+      "wins": 5,
+      "ties": 0,
+      "losses": 3,
+      "units": 8
+    }
+  },
+  "design": {
+    "success_rate": {
+      "native": 0.75,
+      "omni": 0.7916666666666666,
+      "delta": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.125
+      ],
+      "wins": 1,
+      "ties": 5,
+      "losses": 0,
+      "units": 6
+    },
+    "best_sc_rmsd_mean": {
+      "native": 0.7204591163592483,
+      "omni": 1.055418991837821,
+      "delta": 0.33495987547857276,
+      "ci95": [
+        -0.040933792773359096,
+        1.0228922343528655
+      ],
+      "wins": 3,
+      "ties": 0,
+      "losses": 3,
+      "units": 6
+    },
+    "totals": {
+      "native": {
+        "successes": 18,
+        "total": 24,
+        "unique_successes": 8
+      },
+      "omni": {
+        "successes": 19,
+        "total": 24,
+        "unique_successes": 9
+      }
+    }
+  },
+  "limitations": [
+    "Official released monomer validation panel, not the unavailable 2024 Figure 15 test manifest; sequence-only, no MSA.",
+    "8 folding structures and 6 design tasks are a small screening panel, not a full leaderboard or general superiority proof.",
+    "This is a previously inspected exploratory regression panel; unchanged baseline results are reused.",
+    "Design success evaluates scaffold designability after ProteinMPNN; it does not establish sequence-head quality.",
+    "All-atom lDDT uses native lddt_dist and fixed atom-name correspondence without side-chain symmetry optimization."
+  ],
+  "counts": {
+    "folding_targets": 8,
+    "folding_predictions": 80,
+    "design_tasks": 6,
+    "scaffolds": 48,
+    "refolded_sequences": 384
+  },
+  "both_point_estimates_improve": false,
+  "both_ci_exclude_zero_above": false,
+  "checkpoint": "experiments/native_condition_poc/runs/native-1729/final.pt",
+  "checkpoint_sha256": "e7d991ab7ecf0e88c78f2476ff54eeaa03c871af5ffff7a88c2ac0bae819c725",
+  "training_windows": {
+    "1-40": {
+      "train/loss": 0.5917369641363621,
+      "train/folding/loss": 0.326384540554136,
+      "train/design/loss": 0.8570893877185881,
+      "train/gradient_norm_before_clip": 0.6902783736586571,
+      "train/gradient_clip_factor": 1.0
+    },
+    "41-100": {
+      "train/loss": 0.5832549569817881,
+      "train/folding/loss": 0.3326864543681343,
+      "train/design/loss": 0.8338234595954418,
+      "train/gradient_norm_before_clip": 0.6429256642858188,
+      "train/gradient_clip_factor": 1.0
+    },
+    "101-200": {
+      "train/loss": 0.5667918575927615,
+      "train/folding/loss": 0.32990859910845755,
+      "train/design/loss": 0.8036751160770654,
+      "train/gradient_norm_before_clip": 0.6050597369670868,
+      "train/gradient_clip_factor": 1.0
+    },
+    "201-300": {
+      "train/loss": 0.5658127742260695,
+      "train/folding/loss": 0.32864491783082483,
+      "train/design/loss": 0.8029806306213141,
+      "train/gradient_norm_before_clip": 0.5852639389038086,
+      "train/gradient_clip_factor": 1.0
+    },
+    "301-400": {
+      "train/loss": 0.55684306031093,
+      "train/folding/loss": 0.3304277278855443,
+      "train/design/loss": 0.7832583927363157,
+      "train/gradient_norm_before_clip": 0.5919592693448067,
+      "train/gradient_clip_factor": 1.0
+    }
+  }
+}
