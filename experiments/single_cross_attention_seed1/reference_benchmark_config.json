@@ -1,0 +1,98 @@
+{
+  "checkpoint": "/projects/p53127/anewomni_work/trimodal_overnight_20261011/adapter/training/best_joint.pt",
+  "checkpoint_sha256": "6193a388d0b2ea0fc9d523994273d47dd82fb62cb71d0fe175629e151ea88ff9",
+  "data_dir": "/gpfs/projects/p53127/anewomni_work/trimodal_fixedcdr_20261008/hf_release/benchmarks_payload/verify_download",
+  "output": "/gpfs/projects/p53127/anewomni_work/trimodal_overnight_20261011/adapter/benchmark",
+  "cache": "/gpfs/projects/p53127/anewomni_work/trimodal_full_eval_20261009/pairformer_refit/cache",
+  "runtime": {
+    "generation_python": "/projects/p53127/envs/AnewOmni/bin/python",
+    "donor_python": "/projects/p53127/envs/BoltzGenAdapter/bin/python",
+    "score_python": "/projects/p53127/envs/AnewOmniEval/bin/python",
+    "anew_source": "/gpfs/projects/p53127/anewomni_work/trimodal_fixedcdr_20261008/portable_runner_validation/runner/vendor/AnewOmni",
+    "boltzgen_source": "/gpfs/projects/p53127/anewomni_work/trimodal_fixedcdr_20261008/portable_runner_validation/runner/vendor/boltzgen",
+    "pepglad_source": "/gpfs/projects/p53127/anewomni_work/trimodal_fixedcdr_20261008/portable_runner_validation/runner/vendor/PepGLAD",
+    "cbg_source": "/gpfs/projects/p53127/anewomni_work/trimodal_fixedcdr_20261008/portable_runner_validation/runner/vendor/CBGBench",
+    "base_checkpoint": "/gpfs/projects/p53127/anewomni_work/pairformer_fusion5000_20260928/assets/anewomni_official.ckpt",
+    "boltzgen_assets": "/gpfs/projects/p53127/anewomni_work/boltz_adapter_20260922/assets",
+    "source_index_sha256": "aa9559b593ee52655faf05b678181884fa3088e1a7512d9efc21c6b8fc7d98e6",
+    "donor_extra_pythonpath": [
+      "/projects/p53127/anewomni_work/trimodal_fixedcdr_20261008/deps/boltzgen_tracking"
+    ]
+  },
+  "base_checkpoint_sha256": "961599acb617b8baf742755b4416322979507c9814ebd1a1e8582cff9c0a74c1",
+  "dataset_index_sha256": "f3f73e972e1ce51a6033d63648aedbe7ce64a4ede280c5bc1274301a51c2372f",
+  "benchmark_specs": [
+    {
+      "name": "lnr",
+      "targets": 93,
+      "manifest": "/gpfs/projects/p53127/anewomni_work/trimodal_full_eval_20261009/pairformer_refit/manifests/lnr/manifest.jsonl",
+      "manifest_sha256": "0803efa8e98c4189836a9dab8bcb339a44582c5c10f6779d993e713d5bc1be7e"
+    },
+    {
+      "name": "rabd",
+      "targets": 60,
+      "manifest": "/gpfs/projects/p53127/anewomni_work/trimodal_full_eval_20261009/pairformer_refit/manifests/rabd/manifest.jsonl",
+      "manifest_sha256": "807c2458cae3013f21205dc1cc91a2b64f95a4b532a7827778147822e3e622ca"
+    },
+    {
+      "name": "crossdocked2020",
+      "targets": 100,
+      "manifest": "/gpfs/projects/p53127/anewomni_work/trimodal_full_eval_20261009/pairformer_refit/manifests/crossdocked2020/manifest.jsonl",
+      "manifest_sha256": "68af7ac1b137e82a1eb3f8eea9ddf0cb722eb668c8bf06aaeb21de8061893cd4"
+    }
+  ],
+  "samples": 30,
+  "batch_size": 10,
+  "gamma": 1.0,
+  "seed": 20260814,
+  "smoke": false,
+  "wandb_project": "anewomni-pairformer-fusion",
+  "wandb_entity": "jialechen2025-northwestern-university",
+  "source_hashes": {
+    "runtime.py": "3b232347f971a363e88577b4ae664926f3bd51cf4d55fd18fc480e6606694452",
+    "generate_persistent.py": "96c68afa4daa1aa32ff0cc7225f13d25c0bcc72665ac3aecd935579d03ecf570",
+    "pair_bias.py": "17b0c9e7f8304f9c096e0dbb572895b9b09bc14e79a408ad4ea8bac6749128bf",
+    "generate_priority.py": "3044f97dcf510b5020f451296488d8818c2374459f27b49689612a519b544248",
+    "feature_contract.py": "8af994734788b1a4a3ba4f854e486f33481657aefb34db0f5843365bc578e9ba",
+    "generate_chunk.py": "ff15b8ac9d36fda3c394604332dbb4e93775e47cfdbf3f0f333bad2eb82428f9",
+    "native_generator.py": "9bd6855a7e528abf1d70d7c7b2e1ff45fcf6ad21a476c089a16bebebf7535193",
+    "donor_input.py": "19848d7a869055226856fe7342bea331631f04970a9f8acd779fad913e387087",
+    "benchmark.py": "31d3fb881b3aedbd827429dcb697006fdbc883e9d877807edb047326d5846707",
+    "generate_pilot.py": "de6bc3c548b8610608295eb2b1da6f2d1780953fc63e7e4eee13cb4ed3b4550e",
+    "inspect_checkpoint.py": "9c2ffb5a3dc8483ecf07880aa08b30ce61c5b86e50a43cf9854b3bb7730789a2",
+    "export_audit.py": "077e436ebce905d49a6997a6714aa109aed2d2f9596fa2adb42002c5c6959a24",
+    "check_environment.py": "b92b6e246c835ed0d306378e24d26ac84a853bf75bf120807fc4e74e70e8ce1f",
+    "score.py": "103f2572993ba79bec75b6742798065b6a489777d3fde95146e0801646802ca1",
+    "cached_fusion.py": "d9c46566a83969b23858f8b2c5292c108083649e065bd0417637f9484cf9705f",
+    "extract_features.py": "9eb6009040e64ce843b25148c45d619e43bf33393629b4f420d6d407dfeec70d",
+    "fusion.py": "e889f22a7afc53f602122891b0f80b5d5ae9044098c58762f5d582174cddd583",
+    "benchmark_inputs.py": "e2f5ca9162eb69ebfa8da38cc255e6459c63f54fda53aaed2605a5b9ad5b7ff7",
+    "setup_runtime.py": "48d567762b6d9e1a4c6d687761ba6bee84ef884b9aedc216f07b00044f41df60",
+    "holdout_loss.py": "37147f031983a6bc6e0a18d04b10e81beed2e37830783ee5659aa6a05103890c",
+    "generate.py": "a02327a4162f24262bf51513f861f5b41ebac7d457b87293664887fb947adbc2",
+    "generate_interface.py": "4e11707ef5fbbcf5f67cb83e8d0bd22b5694339bb58bd0033f142ccb57796a67",
+    "scoring/evaluate_small_molecule_target.py": "cccf2d815827ff25e8dc93beca380e662747eff86116926007053853853f94a5",
+    "scoring/evaluate_biologic_target.py": "529acd1da0c02343dd2eea44121347293ea07cb8eaed067c9c70cbc3ae2b8657"
+  },
+  "variant": "full",
+  "projection_width": 512,
+  "interface": "deep_values_pairs",
+  "cache_donor_projections": true,
+  "train_backbone": false,
+  "cache_equivalence_gate": "Three fixed training records, cached vs uncached native epsilon",
+  "execution_source_hashes": {
+    "gradient_conflict.py": "14e3bc600a058eac08ca1a1ad92c47c30f7e12651d6bd33797c4c697c536c05c",
+    "ligand_helpers.py": "61351418a788d621aa6c4704b5e65ab9dd12fead4344694fb86cd6e8e7d1f604",
+    "score_launcher.py": "71fd045854d1de44e097581dfbc5c45c571cbfea73da1e803e725d99ce880d4c",
+    "diagnose_use.py": "4f8ce091b5f2e3ec9f5e1ef3ee69a55e8b8b6aa0581a47d38f216ea130d3aaaa",
+    "compare_existing.py": "edd4436a789c2f08cf2c8b08af3dfa5bc428ebeb93105e579eb79f304010bcfc",
+    "score_resume.py": "fbeef04b7a83c44ddeebd01785fb020fa815a5849c5ca82830441d4214f670f7",
+    "score_parallel.py": "0fcb99f7797fad01b396ea155001007249ebc3ce7033eb0aac22fcd8a143c71f",
+    "reuse_reference_caches.py": "e0ebcff9fe0fd9b0b2e22a5ef96b3ead6280ac20ded44f4ed264cef4b018bd7e",
+    "finalize_training.py": "b3742883a96016131a789d8e2429792df1918c8250418fd124923668e97e8bdb",
+    "candidate_helpers.py": "8a0e4d73fcf5f630e24020ff6fd2d37d1c99398e5d2b01a22d8943de5e3a53a1",
+    "audit_completed_benchmark.py": "850eebd2157fa596aca9a7e87619935b8e79a0d1ee3b494bf6a4ebaa806fbb74"
+  },
+  "training_seconds": 14216.363284997642,
+  "run_hash": "8ff1f9b4a267cde8490da7572a995c9e8759bbdf9a55904fded812d069f82a97"
+}
