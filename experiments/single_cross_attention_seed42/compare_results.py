@@ -81,7 +81,7 @@ def main():
         'training_gpu':train['gpu'],'training_budget_seconds':14400,
         'training_gpus':{'method':reftrain['gpu'],'baseline':train['gpu']},
         'identical_gpu_model':reftrain['gpu']==train['gpu'],
-        'compute_comparison_limit':'Same one-A100 wall-clock budget; GPU variants differ, so FLOPs and throughput are not matched.',
+        'compute_comparison_limit':('Same one-A100 wall-clock budget and GPU model; FLOPs, optimizer steps and data presentations are not matched.' if reftrain['gpu']==train['gpu'] else 'Same one-A100 wall-clock budget; GPU variants differ, so FLOPs and throughput are not matched.'),
         'method_actual_seconds':reftrain['job_elapsed_seconds_before_bookkeeping'],
         'baseline_actual_seconds':train['job_elapsed_seconds_before_bookkeeping'],
         'metrics':rows,'validation':{'method':reftrain['validation'],'baseline':train['validation']},
