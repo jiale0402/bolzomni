@@ -79,6 +79,9 @@ def main():
     report={'completed':True,'models':{'method':ref['checkpoint_sha256'],'single_cross_attention':cfg['checkpoint_sha256']},
         'training_seeds':{'method':20261007,'baseline':1},'paired_evaluation_seed':cfg['seed'],
         'training_gpu':train['gpu'],'training_budget_seconds':14400,
+        'training_gpus':{'method':reftrain['gpu'],'baseline':train['gpu']},
+        'identical_gpu_model':reftrain['gpu']==train['gpu'],
+        'compute_comparison_limit':'Same one-A100 wall-clock budget; GPU variants differ, so FLOPs and throughput are not matched.',
         'method_actual_seconds':reftrain['job_elapsed_seconds_before_bookkeeping'],
         'baseline_actual_seconds':train['job_elapsed_seconds_before_bookkeeping'],
         'metrics':rows,'validation':{'method':reftrain['validation'],'baseline':train['validation']},
@@ -103,6 +106,7 @@ def main():
     (out/'RESULTS.json').write_text(json.dumps(report,indent=2,allow_nan=False)+'\n')
     text=['# Single cross-attention vs multi-layer method','',
         'Training: one A100, 4 hours, same 30k manifest. Training seeds: baseline 1, historical method 20261007.',
+        f"Actual GPUs: method {reftrain['gpu']}; baseline {train['gpu']}. Same wall-clock budget does not establish matched FLOPs or throughput.",
         'Evaluation: unchanged paired seeds; 253 targets x 30 attempted slots. Best values are bold, second values underlined; ties share rank.',
         'Rank formatting does not establish statistical significance. Benchmark was previously inspected and has 19 known ligand training-PDB overlaps.','',
         '| Benchmark / metric | Method | Single cross-attention | Finite scores (method / baseline) |',
