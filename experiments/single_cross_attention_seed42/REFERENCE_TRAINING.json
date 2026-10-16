@@ -1,0 +1,62 @@
+{
+  "optimizer_step": 2838,
+  "presentations": 90768,
+  "elapsed_seconds": 14106.114092418924,
+  "validation_seconds": 397.95417947880924,
+  "validation": {
+    "peptide": {
+      "H": 0.6155738954989132,
+      "X": 0.4267610728164159,
+      "total": 1.0423349675441544,
+      "generated_residues": 1512,
+      "records": 114
+    },
+    "antibody": {
+      "H": 0.5580516202074595,
+      "X": 0.3457324986341063,
+      "total": 0.903784127926503,
+      "generated_residues": 3537,
+      "records": 400
+    },
+    "ligand": {
+      "H": 0.7258802380601357,
+      "X": 0.4601281922876211,
+      "total": 1.186008435425334,
+      "generated_residues": 1146,
+      "records": 100
+    },
+    "combined": {
+      "H": 0.6031372176731326,
+      "X": 0.386670782587388,
+      "total": 0.9898080061985852
+    }
+  },
+  "checkpoint": "/projects/p53127/anewomni_work/trimodal_overnight_20261011/adapter/training/best_joint.pt",
+  "checkpoint_sha256": "6193a388d0b2ea0fc9d523994273d47dd82fb62cb71d0fe175629e151ea88ff9",
+  "completed": true,
+  "optimizer_steps": 2838,
+  "modality_presentations": {
+    "peptide": 30260,
+    "antibody": 30250,
+    "ligand": 30258
+  },
+  "training_validation_seconds": 14184.903367452323,
+  "job_elapsed_seconds_before_bookkeeping": 14216.363284997642,
+  "gpu_preflight_seconds": null,
+  "previous_failed_allocation_seconds": 0,
+  "total_setting_seconds_before_bookkeeping": 14216.363284997642,
+  "preflight_startup_seconds": 31.459917545318604,
+  "budget_seconds": 14400,
+  "budget_exceeded": false,
+  "optimizer_seconds": 13226.130453044549,
+  "validation_calls": 7,
+  "gpu_count": 1,
+  "gpu": "NVIDIA A100-PCIE-40GB",
+  "initial_adapter_state_hash": "8870bc029b0e41eb74e932800b2df94e18d9f1d36d581962998ea7b044960f90",
+  "frozen_parameters_unchanged": true,
+  "base_unchanged": true,
+  "trainable_parameters": 4027712,
+  "fusion_parameters": 4027712,
+  "selected_checkpoint_is_shared": true,
+  "benchmark_complete": false
+}
