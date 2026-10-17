@@ -1,0 +1,594 @@
+{
+  "main_table_source_commit": "1fc91a77676af24572c0022083aaf135cd820a0d",
+  "main_table_source_sha256": "8ea24e4b142c42a284a1be8d7be8dd91cdd58c58f2c7a596f32ac99c1508f9bb",
+  "baseline_report_sha256": "1fa4fda2b15ef698c016c723aff2c1c812407d2d1fd63626e0f36f3fa254faf1",
+  "baseline_checkpoint_sha256": "91583c7a0a961319c92f880ded98981307ec612e8299a45084eb9355ab143d2e",
+  "tables": [
+    {
+      "benchmark": "rabd",
+      "title": "1a. Antibody design on RAbD",
+      "columns": [
+        "Complex RMSD",
+        "AAR (%)",
+        "Intra clash (%)",
+        "Inter clash (%)",
+        "Rosetta dG",
+        "Rosetta ddG",
+        "DockQ",
+        "iRMSD",
+        "Contact (%)",
+        "Backbone lDDT"
+      ],
+      "higher_is_better": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "rows": [
+        {
+          "method": "AnewOmni",
+          "values": [
+            "2.5563",
+            "15.6755",
+            "0.7501",
+            "0.2865",
+            "-8.2291",
+            "10.2721",
+            "0.6853",
+            "1.1905",
+            "50.9592",
+            "0.6863"
+          ],
+          "reference_only": false,
+          "ranks": [
+            1,
+            2,
+            1,
+            0,
+            0,
+            0,
+            3,
+            2,
+            3,
+            2
+          ]
+        },
+        {
+          "method": "Matched adapter",
+          "values": [
+            "2.5864",
+            "15.2559",
+            "0.7854",
+            "0.3594",
+            "-7.2722",
+            "10.8981",
+            "0.6861",
+            "1.1868",
+            "51.0801",
+            "0.6855"
+          ],
+          "reference_only": false,
+          "ranks": [
+            3,
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "method": "Single cross-attention (seed 1)",
+          "training_seed": 1,
+          "values": [
+            "2.6030",
+            "15.5504",
+            "0.8009",
+            "0.3533",
+            "-8.0831",
+            "10.4181",
+            "0.6813",
+            "1.2096",
+            "50.6942",
+            "0.6810"
+          ],
+          "reference_only": false,
+          "finite_scores": [
+            1800,
+            1800,
+            1800,
+            1800,
+            1800,
+            1800,
+            1770,
+            1770,
+            1770,
+            1800
+          ],
+          "ranks": [
+            4,
+            3,
+            4,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "method": "Single cross-attention (seed 42)",
+          "training_seed": 42,
+          "values": [
+            "2.5659",
+            "16.0470",
+            "0.7825",
+            "0.3762",
+            "-6.2999",
+            "12.2013",
+            "0.6860",
+            "1.1909",
+            "51.1544",
+            "0.6877"
+          ],
+          "reference_only": false,
+          "finite_scores": [
+            1800,
+            1800,
+            1800,
+            1800,
+            1800,
+            1800,
+            1770,
+            1770,
+            1770,
+            1800
+          ],
+          "ranks": [
+            2,
+            0,
+            2,
+            4,
+            4,
+            4,
+            2,
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "method": "Our method",
+          "values": [
+            "2.3769",
+            "15.7829",
+            "0.6393",
+            "0.3177",
+            "-8.1333",
+            "10.3679",
+            "0.7025",
+            "1.1183",
+            "52.5997",
+            "0.7035"
+          ],
+          "reference_only": false,
+          "ranks": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "benchmark": "lnr",
+      "title": "1b. Peptide design on LNR",
+      "columns": [
+        "Complex RMSD",
+        "Peptide RMSD",
+        "AAR (%)",
+        "Intra clash (%)",
+        "Inter clash (%)",
+        "Rosetta dG",
+        "Rosetta ddG",
+        "DockQ",
+        "iRMSD",
+        "Contact (%)",
+        "Backbone lDDT"
+      ],
+      "higher_is_better": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "rows": [
+        {
+          "method": "AnewOmni",
+          "values": [
+            "8.5619",
+            "2.9091",
+            "6.4306",
+            "1.0151",
+            "0.8863",
+            "23.0295",
+            "60.6401",
+            "0.4280",
+            "3.1039",
+            "33.1855",
+            "0.4197"
+          ],
+          "reference_only": false,
+          "ranks": [
+            4,
+            4,
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "method": "Matched adapter",
+          "values": [
+            "8.5092",
+            "2.8568",
+            "6.4294",
+            "0.9725",
+            "0.7926",
+            "17.7466",
+            "55.3640",
+            "0.4297",
+            "3.0770",
+            "33.2400",
+            "0.4206"
+          ],
+          "reference_only": false,
+          "ranks": [
+            2,
+            1,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "method": "Single cross-attention (seed 1)",
+          "training_seed": 1,
+          "values": [
+            "8.4766",
+            "2.8664",
+            "6.4681",
+            "0.8905",
+            "0.6914",
+            "6.6256",
+            "44.2362",
+            "0.4314",
+            "3.0694",
+            "33.3662",
+            "0.4223"
+          ],
+          "reference_only": false,
+          "finite_scores": [
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790
+          ],
+          "ranks": [
+            1,
+            2,
+            1,
+            0,
+            0,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "method": "Single cross-attention (seed 42)",
+          "training_seed": 42,
+          "values": [
+            "8.5247",
+            "2.8703",
+            "6.4930",
+            "0.8931",
+            "0.7357",
+            "0.9197",
+            "38.5303",
+            "0.4291",
+            "3.0887",
+            "33.2262",
+            "0.4203"
+          ],
+          "reference_only": false,
+          "finite_scores": [
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790,
+            2790
+          ],
+          "ranks": [
+            3,
+            3,
+            0,
+            1,
+            1,
+            0,
+            0,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "method": "Our method",
+          "values": [
+            "8.2497",
+            "2.8474",
+            "6.3655",
+            "0.8982",
+            "0.7463",
+            "4.7494",
+            "42.3600",
+            "0.4393",
+            "2.9919",
+            "34.1400",
+            "0.4293"
+          ],
+          "reference_only": false,
+          "ranks": [
+            0,
+            0,
+            4,
+            2,
+            2,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "BoltzGen",
+          "values": [
+            "7.7732",
+            "2.0516",
+            "15.9628",
+            "0.1170",
+            "0.6476",
+            "-24.9313",
+            "12.8457",
+            "0.5459",
+            "2.8146",
+            "47.3143",
+            "0.5321"
+          ],
+          "reference_only": true,
+          "ranks": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "benchmark": "crossdocked2020",
+      "title": "1c. Small-molecule design on CrossDocked2020",
+      "columns": [
+        "Vina score",
+        "Vina min",
+        "Vina dock",
+        "QED",
+        "SA norm",
+        "Lipinski (/5)"
+      ],
+      "higher_is_better": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "rows": [
+        {
+          "method": "AnewOmni",
+          "values": [
+            "-5.1279",
+            "-5.9715",
+            "-7.0580",
+            "0.5745",
+            "0.7684",
+            "4.8066"
+          ],
+          "reference_only": false,
+          "ranks": [
+            2,
+            2,
+            4,
+            2,
+            4,
+            0
+          ]
+        },
+        {
+          "method": "Matched adapter",
+          "values": [
+            "-5.2011",
+            "-6.0286",
+            "-7.1355",
+            "0.5766",
+            "0.7724",
+            "4.7881"
+          ],
+          "reference_only": false,
+          "ranks": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "method": "Single cross-attention (seed 1)",
+          "training_seed": 1,
+          "values": [
+            "-5.0731",
+            "-5.9194",
+            "-7.0623",
+            "0.5729",
+            "0.7691",
+            "4.7971"
+          ],
+          "reference_only": false,
+          "finite_scores": [
+            1872,
+            1872,
+            1872,
+            1888,
+            1888,
+            1888
+          ],
+          "ranks": [
+            3,
+            4,
+            3,
+            3,
+            3,
+            1
+          ]
+        },
+        {
+          "method": "Single cross-attention (seed 42)",
+          "training_seed": 42,
+          "values": [
+            "-5.0638",
+            "-5.9402",
+            "-7.1159",
+            "0.5801",
+            "0.7707",
+            "4.7963"
+          ],
+          "reference_only": false,
+          "finite_scores": [
+            1829,
+            1829,
+            1829,
+            1846,
+            1846,
+            1846
+          ],
+          "ranks": [
+            4,
+            3,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "method": "Our method",
+          "values": [
+            "-5.2283",
+            "-6.0195",
+            "-7.1400",
+            "0.5715",
+            "0.7748",
+            "4.7759"
+          ],
+          "reference_only": false,
+          "ranks": [
+            0,
+            1,
+            0,
+            4,
+            0,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "baseline_checkpoints_by_seed": {
+    "1": "91583c7a0a961319c92f880ded98981307ec612e8299a45084eb9355ab143d2e",
+    "42": "8da1c9a0c0c1d99e310363c17d172423f160172099e637c66f629d1ac6304a16"
+  },
+  "scope": "Main-table preview; existing rows retained verbatim. Interface scores use the same frozen main-table operators.",
+  "baseline_training_seed": 1,
+  "method_training_seed": 20261007,
+  "known_ligand_training_pdb_overlap": 19,
+  "benchmark_previously_inspected": true,
+  "publication_updated": false
+}

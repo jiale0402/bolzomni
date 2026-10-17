@@ -1,0 +1,281 @@
+{
+  "completed": true,
+  "models": {
+    "method": "6193a388d0b2ea0fc9d523994273d47dd82fb62cb71d0fe175629e151ea88ff9",
+    "single_cross_attention": "8da1c9a0c0c1d99e310363c17d172423f160172099e637c66f629d1ac6304a16"
+  },
+  "training_seeds": {
+    "method": 20261007,
+    "baseline": 42
+  },
+  "paired_evaluation_seed": 20260814,
+  "training_gpu": "NVIDIA A100-PCIE-40GB",
+  "training_budget_seconds": 14400,
+  "training_gpus": {
+    "method": "NVIDIA A100-PCIE-40GB",
+    "baseline": "NVIDIA A100-PCIE-40GB"
+  },
+  "identical_gpu_model": true,
+  "compute_comparison_limit": "Same one-A100 wall-clock budget and GPU model; FLOPs, optimizer steps and data presentations are not matched.",
+  "method_actual_seconds": 14216.363284997642,
+  "baseline_actual_seconds": 14223.774891382083,
+  "metrics": [
+    {
+      "benchmark": "lnr",
+      "metric": "structural/AAR",
+      "higher_is_better": true,
+      "display_decimals": 2,
+      "targets": 93,
+      "attempts": 2790,
+      "method": 6.365532223850348,
+      "single_cross_attention": 6.492968070957264,
+      "method_finite_scores": 2790,
+      "baseline_finite_scores": 2790,
+      "method_missing": 0,
+      "baseline_missing": 0,
+      "paired_target_bootstrap_difference_ci95": [
+        -0.0722334137717471,
+        0.3255212286410985
+      ]
+    },
+    {
+      "benchmark": "lnr",
+      "metric": "structural/complex_RMSD",
+      "higher_is_better": false,
+      "display_decimals": 3,
+      "targets": 93,
+      "attempts": 2790,
+      "method": 8.249740649166235,
+      "single_cross_attention": 8.52466030628471,
+      "method_finite_scores": 2790,
+      "baseline_finite_scores": 2790,
+      "method_missing": 0,
+      "baseline_missing": 0,
+      "paired_target_bootstrap_difference_ci95": [
+        0.034466666242957446,
+        0.5278209977213228
+      ]
+    },
+    {
+      "benchmark": "rabd",
+      "metric": "structural/AAR",
+      "higher_is_better": true,
+      "display_decimals": 2,
+      "targets": 60,
+      "attempts": 1800,
+      "method": 15.782873282834581,
+      "single_cross_attention": 16.04695487356736,
+      "method_finite_scores": 1800,
+      "baseline_finite_scores": 1800,
+      "method_missing": 0,
+      "baseline_missing": 0,
+      "paired_target_bootstrap_difference_ci95": [
+        -0.1486156763104631,
+        0.6773366204706478
+      ]
+    },
+    {
+      "benchmark": "rabd",
+      "metric": "structural/complex_RMSD",
+      "higher_is_better": false,
+      "display_decimals": 3,
+      "targets": 60,
+      "attempts": 1800,
+      "method": 2.376908939388251,
+      "single_cross_attention": 2.5659144526610307,
+      "method_finite_scores": 1800,
+      "baseline_finite_scores": 1800,
+      "method_missing": 0,
+      "baseline_missing": 0,
+      "paired_target_bootstrap_difference_ci95": [
+        0.12235042419804121,
+        0.26078532509415325
+      ]
+    },
+    {
+      "benchmark": "crossdocked2020",
+      "metric": "vina/dock",
+      "higher_is_better": false,
+      "display_decimals": 3,
+      "targets": 100,
+      "attempts": 3000,
+      "method": -7.14002169197397,
+      "single_cross_attention": -7.115896664844176,
+      "method_finite_scores": 1844,
+      "baseline_finite_scores": 1829,
+      "method_missing": 1156,
+      "baseline_missing": 1171,
+      "paired_target_bootstrap_difference_ci95": [
+        -0.19025464065467249,
+        0.18741421430956678
+      ]
+    },
+    {
+      "benchmark": "crossdocked2020",
+      "metric": "chemical/qed",
+      "higher_is_better": true,
+      "display_decimals": 3,
+      "targets": 100,
+      "attempts": 3000,
+      "method": 0.5715405122499562,
+      "single_cross_attention": 0.5800518651982738,
+      "method_finite_scores": 1856,
+      "baseline_finite_scores": 1846,
+      "method_missing": 1144,
+      "baseline_missing": 1154,
+      "paired_target_bootstrap_difference_ci95": [
+        -0.0008138073419135139,
+        0.01762768573395487
+      ]
+    },
+    {
+      "benchmark": "crossdocked2020",
+      "metric": "success",
+      "higher_is_better": true,
+      "display_decimals": 2,
+      "targets": 100,
+      "attempts": 3000,
+      "method": 61.86666666666667,
+      "single_cross_attention": 61.53333333333333,
+      "method_finite_scores": 3000,
+      "baseline_finite_scores": 3000,
+      "method_missing": 0,
+      "baseline_missing": 0,
+      "paired_target_bootstrap_difference_ci95": [
+        -2.500000000000002,
+        1.866666666666661
+      ]
+    }
+  ],
+  "validation": {
+    "method": {
+      "peptide": {
+        "H": 0.6155738954989132,
+        "X": 0.4267610728164159,
+        "total": 1.0423349675441544,
+        "generated_residues": 1512,
+        "records": 114
+      },
+      "antibody": {
+        "H": 0.5580516202074595,
+        "X": 0.3457324986341063,
+        "total": 0.903784127926503,
+        "generated_residues": 3537,
+        "records": 400
+      },
+      "ligand": {
+        "H": 0.7258802380601357,
+        "X": 0.4601281922876211,
+        "total": 1.186008435425334,
+        "generated_residues": 1146,
+        "records": 100
+      },
+      "combined": {
+        "H": 0.6031372176731326,
+        "X": 0.386670782587388,
+        "total": 0.9898080061985852
+      }
+    },
+    "baseline": {
+      "peptide": {
+        "H": 0.6204975281728717,
+        "X": 0.434811491891249,
+        "total": 1.0553090267041056,
+        "generated_residues": 1512,
+        "records": 114
+      },
+      "antibody": {
+        "H": 0.5660970810619634,
+        "X": 0.35030140391592296,
+        "total": 0.9163984866896557,
+        "generated_residues": 3537,
+        "records": 400
+      },
+      "ligand": {
+        "H": 0.7706657151251147,
+        "X": 0.4735830486321376,
+        "total": 1.2442487810866787,
+        "generated_residues": 1146,
+        "records": 100
+      },
+      "combined": {
+        "H": 0.6172171990067681,
+        "X": 0.3937332066380335,
+        "total": 1.010950411448467
+      }
+    }
+  },
+  "known_training_pdb_overlap": 19,
+  "benchmark_previously_inspected": true,
+  "parameter_counts": {
+    "method": 4027712,
+    "baseline": 4028016
+  },
+  "verified_targets": 253,
+  "verified_attempts": 7590,
+  "ranking_does_not_imply_significance": true,
+  "benchmark_holdout_loss": {
+    "baseline": {
+      "peptide": {
+        "H": 0.8589360958852832,
+        "X": 0.38068987358493495,
+        "total": 1.2396259771550486,
+        "records": 93,
+        "generated_blocks": 974,
+        "noise_evaluations": 372
+      },
+      "antibody": {
+        "H": 0.6843883704566079,
+        "X": 0.33348365225820364,
+        "total": 1.0178720203639275,
+        "records": 60,
+        "generated_blocks": 660,
+        "noise_evaluations": 240
+      },
+      "ligand": {
+        "H": 0.8499797693691069,
+        "X": 0.3788213179775908,
+        "total": 1.2288010823407607,
+        "records": 100,
+        "generated_blocks": 697,
+        "noise_evaluations": 400
+      },
+      "combined": {
+        "H": 0.8068365427472736,
+        "X": 0.3667651677359596,
+        "total": 1.1736017115318402
+      }
+    },
+    "method": {
+      "peptide": {
+        "H": 0.862109743519532,
+        "X": 0.3804971921098545,
+        "total": 1.2426069432441542,
+        "records": 93,
+        "generated_blocks": 974,
+        "noise_evaluations": 372
+      },
+      "antibody": {
+        "H": 0.6856593850329801,
+        "X": 0.33076025781051477,
+        "total": 1.0164196396862142,
+        "records": 60,
+        "generated_blocks": 660,
+        "noise_evaluations": 240
+      },
+      "ligand": {
+        "H": 0.8501479539517404,
+        "X": 0.37882247091303095,
+        "total": 1.2289704243487838,
+        "records": 100,
+        "generated_blocks": 697,
+        "noise_evaluations": 400
+      },
+      "combined": {
+        "H": 0.8085728048966769,
+        "X": 0.36591389853982004,
+        "total": 1.17448670557006
+      }
+    }
+  }
+}

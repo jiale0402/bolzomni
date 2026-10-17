@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "training_complete": true,
+  "full_benchmark_complete": true,
+  "interface_complete": true,
+  "shared_checkpoint_sha256": "8da1c9a0c0c1d99e310363c17d172423f160172099e637c66f629d1ac6304a16",
+  "validation_selected_step": 3426,
+  "startup_inclusive_seconds": 14223.774891382083,
+  "startup_budget_seconds": 14400,
+  "training_gpu": "NVIDIA A100-PCIE-40GB",
+  "optimizer_steps": 3426,
+  "presentations": 109584,
+  "generation_gpu_seconds": 15004,
+  "cpu_scoring_comparison_interface_allocated_seconds": 6681,
+  "cpu_allocation": 64,
+  "all253targets_verified": true,
+  "all7590fixedslots_verified": true,
+  "6436candidate_score_hashes_verified": true,
+  "native_failed_slots": 1154,
+  "interface_missing": {
+    "target": "rabd_055_3uzq_B_A_a",
+    "reason": "reference has no native heavy-atom contact below5A",
+    "metrics": [
+      "DockQ",
+      "iRMSD",
+      "fnat"
+    ],
+    "affected_slots": 30,
+    "valid_targets": 59,
+    "valid_candidates": 1770,
+    "not_a_generation_failure": true
+  },
+  "source_files_verified": 53,
+  "wandb_runs_finished_with_committed_artifacts": 35,
+  "training_seed_only_change_in_model_protocol": true,
+  "historical_method_training_seed": 20261007,
+  "generation_seed": 20260814,
+  "benchmark_previously_inspected": true,
+  "known_ligand_training_pdb_overlap": 19,
+  "github_training_scripts_commit": "f36652b17c58b1f89e3d314826ca11e33b640386"
+}

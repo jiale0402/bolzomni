@@ -1,0 +1,427 @@
+{
+  "runs": [
+    {
+      "run_id": "single-cross-attention-matched4m-seed42-20261016-training-native",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/single-cross-attention-matched4m-seed42-20261016-training-native",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "3a73c1ce93b038728970d71fc961b91a",
+          "name": "single-cross-attention-matched4m-seed42-20261016-training-native:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "single-cross-attention-matched4m-seed42-20261016-comparison",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/single-cross-attention-matched4m-seed42-20261016-comparison",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "4d419984d1225507e4811eaf76f54e11",
+          "name": "single-cross-attention-matched4m-seed42-20261016-comparison:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "single-cross-attention-matched4m-seed42-20261016-remaining-interface",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/single-cross-attention-matched4m-seed42-20261016-remaining-interface",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "8759970d8c2034fe5baa7f4511f0d3d7",
+          "name": "single-cross-attention-matched4m-seed42-20261016-remaining-interface:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-scoring",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-scoring",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "5632dba0c1ec77e1f8d7e36671c2e1d0",
+          "name": "benchmark-bench-30c532c37651-scoring:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk0",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk0",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "09f3e1974e0c7c2584020778eaf89170",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk0:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk1",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk1",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "53a89b6f5aaefae0e73760f0468fb435",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk1:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk2",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk2",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "4c0c3af904720be606693279cafe3803",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk2:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk3",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk3",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "bbf8aca3cd9efca15694293cf6acb23d",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk3:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk4",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk4",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "4161a06546c23a735ba6d85356d0b522",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk4:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk5",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk5",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "cb5adc99e43cd671f90fad6316321614",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk5:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk6",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk6",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "8af3211879dc15988c566e360b25cd52",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk6:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk7",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk7",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "2f35c1d80b50a74e76b276dba0c3edbe",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk7:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk8",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk8",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "11d4184d1def621c7f35ef83d5f4275e",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk8:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk9",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk9",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "c14c64086e78117a56c48e1ae90355ec",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk9:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk10",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk10",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "5b939b3fcc7a8fb63fb49b26fbea4ca4",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk10:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk11",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk11",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "3fdb7234d9527c76ee4116b0e707971c",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk11:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk12",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk12",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "dc8afb9c3d49a087f662759fea2337be",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk12:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk13",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk13",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "a92ba553fff001e1613afe5a48bf46cc",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk13:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk14",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk14",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "3dfa17b1b4cdfacc24cec6dd97445358",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk14:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk15",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk15",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "3795abd5c10e3f85df6b6532da03920f",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk15:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk16",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk16",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "fd02ecaa7ab2f322dfc06ee57c28bbff",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk16:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk17",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk17",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "4875e3802181ef8119591ee102ec471e",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk17:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk18",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk18",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "09dfd08092b5fbddd2df64bcaf1b6b6a",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk18:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk19",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk19",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "176149c5a1fdbd6f2e3d5fed57b8bf7f",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk19:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk20",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk20",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "cb8fc83d3bd80068bec448a261585cf7",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk20:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk21",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk21",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "2ae2c0f02348c983e8757c155cdb87eb",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk21:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk22",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk22",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "6c39af8fa3100a41360c82d0b46e3207",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk22:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk23",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk23",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "e079cf7f91d7b09e7fff533da7f72495",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk23:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk24",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk24",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "5d77b70a4ce29c60be3b471aba923c49",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk24:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk25",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk25",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "8f79a41bdd87275e402f5854c844294e",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk25:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk26",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk26",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "dfaa13a4a21f5bd247279be43434ff01",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk26:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk27",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk27",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "ebee762845321c2804c5522e57ddd106",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk27:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk28",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk28",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "2d4ac34009e12260d7f73aa867c48978",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk28:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk29",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk29",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "70160d3adf09fe066c9145eb024d8bc1",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk29:v0"
+        }
+      ]
+    },
+    {
+      "run_id": "bench-30c532c37651-evaluation-omni-interleaved-chunk30",
+      "state": "finished",
+      "url": "https://wandb.ai/jialechen2025-northwestern-university/anewomni-pairformer-fusion/runs/bench-30c532c37651-evaluation-omni-interleaved-chunk30",
+      "artifacts": [
+        {
+          "state": "COMMITTED",
+          "digest": "c31fd9984769f08ab008e77e7e826608",
+          "name": "benchmark-bench-30c532c37651-evaluation-omni-interleaved-chunk30:v0"
+        }
+      ]
+    }
+  ],
+  "all_finished": true,
+  "all_have_committed_artifacts": true,
+  "verification": "single server GraphQL query using saved authentication; no credential copied"
+}

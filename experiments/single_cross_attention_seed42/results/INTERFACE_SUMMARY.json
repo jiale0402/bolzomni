@@ -1,0 +1,74 @@
+{
+  "checkpoint_sha256": "8da1c9a0c0c1d99e310363c17d172423f160172099e637c66f629d1ac6304a16",
+  "training_seed": 42,
+  "benchmark_run_hash": "30c532c376517e1f4078897b2aa29f4422d87efa88b330d3a184c4b146f09745",
+  "targets": 153,
+  "attempted_slots": 4590,
+  "allocated_cpus": 8,
+  "elapsed_seconds": 160.3872963897884,
+  "new_generation_attempts": 0,
+  "optimizer_updates": 0,
+  "candidate_sha256": "0503cec786e6c4ed1d97d3ea7784259785306a0454e2ab4a40621c5f66f51dab",
+  "metrics": {
+    "lnr": {
+      "DockQ": {
+        "mean": 0.4290937981294791,
+        "targets": 93,
+        "candidates": 2790,
+        "attempted_slots": 2790,
+        "missing": 0
+      },
+      "iRMSD": {
+        "mean": 3.088680132814925,
+        "targets": 93,
+        "candidates": 2790,
+        "attempted_slots": 2790,
+        "missing": 0
+      },
+      "fnat": {
+        "mean": 0.33226169407865264,
+        "targets": 93,
+        "candidates": 2790,
+        "attempted_slots": 2790,
+        "missing": 0
+      },
+      "backbone_interface_lddt": {
+        "mean": 0.42026088910820586,
+        "targets": 93,
+        "candidates": 2790,
+        "attempted_slots": 2790,
+        "missing": 0
+      }
+    },
+    "rabd": {
+      "DockQ": {
+        "mean": 0.6859690258346118,
+        "targets": 59,
+        "candidates": 1770,
+        "attempted_slots": 1800,
+        "missing": 30
+      },
+      "iRMSD": {
+        "mean": 1.1908520443621557,
+        "targets": 59,
+        "candidates": 1770,
+        "attempted_slots": 1800,
+        "missing": 30
+      },
+      "fnat": {
+        "mean": 0.5115436928217941,
+        "targets": 59,
+        "candidates": 1770,
+        "attempted_slots": 1800,
+        "missing": 30
+      },
+      "backbone_interface_lddt": {
+        "mean": 0.6876504438870991,
+        "targets": 60,
+        "candidates": 1800,
+        "attempted_slots": 1800,
+        "missing": 0
+      }
+    }
+  }
+}
