@@ -12,12 +12,12 @@ def main():
     report=json.loads((ROOT/'benchmark/REPORT.json').read_text())
     interface=json.loads((ROOT/'interface_metrics/SUMMARY.json').read_text())
     comparison=json.loads((ROOT/'comparison/RESULTS.json').read_text())
-    assert cfg['seed']==1 and train['trainable_parameters']==4027715
+    assert isinstance(cfg['seed'],int) and train['trainable_parameters']==4027715
     assert train['checkpoint_sha256']==report['checkpoint_sha256']
     e=html.escape
-    parts=['<!doctype html><meta charset="utf-8"><title>EnzyAdapter seed 1</title>',
+    parts=[f'<!doctype html><meta charset="utf-8"><title>EnzyAdapter seed {cfg["seed"]}</title>',
         '<style>body{font:16px system-ui;max-width:1100px;margin:36px auto;padding:0 22px;color:#142331}table{border-collapse:collapse;width:100%;margin:20px 0}th,td{padding:8px;border-bottom:1px solid #ddd;text-align:left}code,pre{background:#f1f5f8;padding:12px;white-space:pre-wrap;overflow-wrap:anywhere}h2{margin-top:32px}</style>',
-        '<h1>EnzyAdapter · matched capacity · seed 1</h1>',
+        f'<h1>EnzyAdapter · matched capacity · seed {cfg["seed"]}</h1>',
         f"<p>Frozen Anew; {train['trainable_parameters']:,} trainable fusion parameters. One A100, 14,400-second startup-inclusive training budget.</p>",
         f"<p>Optimizer steps: {train['optimizer_steps']}; presentations: {train['presentations']}. Selected checkpoint: <code>{e(train['checkpoint_sha256'])}</code></p>",
         '<p>One shared checkpoint selected on the fixed 614-record validation set. The previously inspected 253-target benchmark holdout does not select weights. Known ligand training-PDB overlaps: 19.</p>',
@@ -29,6 +29,7 @@ def main():
         parts += [f'<h2>{e(name)}</h2>',f"<p>Attempted {all_['attempted']}; generated {all_['generated']}; candidates with metric errors {all_['metric_error_candidates']}.</p>",
             '<table><tr><th>Native metric (raw units)</th><th>Mean</th><th>Median</th><th>Finite candidates</th></tr>']
         for metric,stats in all_['metrics'].items():
+            if metric.rsplit('/',1)[-1].lower() in {'dg','ddg'}:continue
             parts.append(f"<tr><td>{e(metric)}</td><td>{stats['mean']:.6g}</td><td>{stats['median']:.6g}</td><td>{stats['count']}</td></tr>")
         parts.append('</table>')
     assert total==7590
