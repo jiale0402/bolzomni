@@ -1,0 +1,36 @@
+{
+  "scope": "CPU native-checkpoint forward/backward, loss formula, checkpoint replay, frozen-state and effective-batch32 checks",
+  "methods": {
+    "enzy": {
+      "trainable_parameters": 4027715,
+      "target": 4027712,
+      "relative_error": 7.448397500997572e-07,
+      "seeds": [
+        1,
+        123,
+        42
+      ],
+      "cpu_checks_passed": true,
+      "optimizer_updates": 0,
+      "fusion_sha256": "1292f1dd0eccc32f0a9b7000957b135f84eeb99cbae31b988cbf4e01cb7a7d30",
+      "backward_helper_sha256": "bd85e11e3ffa9d3473fecc069124fd6ba123752082b5e0bcca9881c2d492846c"
+    },
+    "ses": {
+      "trainable_parameters": 4009680,
+      "target": 4027712,
+      "relative_error": -0.0044769834585988155,
+      "seeds": [
+        1,
+        123,
+        42
+      ],
+      "cpu_checks_passed": true,
+      "optimizer_updates": 0,
+      "fusion_sha256": "ea0871dbcbc018170fa6ee5698f40f67f1d2f0cbe9b825d2c266f7a33ab08ab9",
+      "backward_helper_sha256": "bd85e11e3ffa9d3473fecc069124fd6ba123752082b5e0bcca9881c2d492846c"
+    }
+  },
+  "matched_width_cuda_verified": false,
+  "full_training_verified": false,
+  "note": "Fusion operators and backward helper match the tested snapshot; configuration and I/O defaults are generalized for publication."
+}

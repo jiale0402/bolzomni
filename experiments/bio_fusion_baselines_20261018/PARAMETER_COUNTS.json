@@ -1,0 +1,23 @@
+{
+  "enzy": {
+    "trainable_parameters": 4027715,
+    "total_parameters": 4027715,
+    "frozen_unused_parameters": 0,
+    "target": 4027712,
+    "relative_error": 7.448397500997572e-07,
+    "widths": {
+      "attention_width": 169,
+      "projector_hidden_width": 1029
+    }
+  },
+  "ses": {
+    "trainable_parameters": 4009680,
+    "total_parameters": 4901760,
+    "frozen_unused_parameters": 892080,
+    "target": 4027712,
+    "relative_error": -0.0044769834585988155,
+    "widths": {
+      "hidden_width": 944
+    }
+  }
+}

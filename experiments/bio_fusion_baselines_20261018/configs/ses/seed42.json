@@ -1,0 +1,109 @@
+{
+  "seed": 42,
+  "train_records": 30000,
+  "effective_batch": 32,
+  "lr": 0.0003,
+  "optimizer": "AdamW",
+  "weight_decay": 0.01,
+  "grad_clip": 1.0,
+  "validation_count": 614,
+  "anew_source_commit": "926e99818ea18cf9d9b2064ce0319fe691b7a1f1",
+  "anew_checkpoint_url": "https://github.com/bytedance/AnewOmni/releases/download/init/model.ckpt",
+  "anew_checkpoint_sha256": "961599acb617b8baf742755b4416322979507c9814ebd1a1e8582cff9c0a74c1",
+  "anew_checkpoint_size": 722534016,
+  "pairformer_recycles": 3,
+  "sampling_seed": 20260928,
+  "records_per_modality": 10000,
+  "variant": "full",
+  "projection_width": 512,
+  "gamma": 1.0,
+  "modalities": [
+    "peptide",
+    "antibody",
+    "ligand"
+  ],
+  "max_gpus": 1,
+  "interface": "ses_author_operator_transfer",
+  "budget_seconds": 14400,
+  "manifest_sha256": "f7cd81f35e19173e74e3798dca97e009ad0d125622ec177676838c22f1b650fa",
+  "injection_point": "One SES residual/LayerNorm update at first normalized post-attention EPT FFN branch input; native outer residual and vector input preserved",
+  "query_source": "Aligned donor single tokens",
+  "trainable_parameters": 4009680,
+  "train_backbone": false,
+  "trainable_scope": "fusion only",
+  "schedule": "100-step warmup and wall-clock cosine to 20 percent",
+  "evaluation_every_optimizer_steps": 500,
+  "holdout_targets": 253,
+  "holdout_draws_per_target": 4,
+  "holdout_used_for_selection": false,
+  "reference_method_parameters": 4027712,
+  "fusion_attention_blocks": 1,
+  "benchmark_seed": 20260814,
+  "total_fusion_parameters": 4901760,
+  "source_provenance": [
+    {
+      "method": "enzy",
+      "repository": "Vecteur-libre/EnzyControl",
+      "commit": "2868406052a01a1a7a1c4ac636ca09f86a229394",
+      "source_path": "models/flow_model_with_adapter2.py",
+      "url": "https://raw.githubusercontent.com/Vecteur-libre/EnzyControl/2868406052a01a1a7a1c4ac636ca09f86a229394/models/flow_model_with_adapter2.py",
+      "source_sha256": "3aa34eea5d750181ab1c228e86ca5fcfb84c8d751c564b9fa2c97cd60b891d9e",
+      "extracted_file": "enzy_crossmodal.py",
+      "extracted_definitions": [
+        "CrossModalAdapter"
+      ],
+      "extracted_sha256": "dc607afd48a9ecdaff79258dd67d0ac62b70ab3546121e1879350e9447c85930",
+      "definitions_modified": false
+    },
+    {
+      "method": "enzy",
+      "repository": "Vecteur-libre/EnzyControl",
+      "commit": "2868406052a01a1a7a1c4ac636ca09f86a229394",
+      "source_path": "models/mol_embedder.py",
+      "url": "https://raw.githubusercontent.com/Vecteur-libre/EnzyControl/2868406052a01a1a7a1c4ac636ca09f86a229394/models/mol_embedder.py",
+      "source_sha256": "93ef5446e1717f2c4126b4415489f4ea6a786c4b137bbf29bff60cc33d4db360",
+      "extracted_file": "enzy_projector.py",
+      "extracted_definitions": [
+        "MolEmbedder"
+      ],
+      "extracted_sha256": "07769b7d96d7999c355cbc5d63bc6c3cad3493d81dbf3a99e6d9a376151206db",
+      "definitions_modified": false
+    },
+    {
+      "method": "ses",
+      "repository": "tyang816/SES-Adapter",
+      "commit": "ec5bf619d665435c161493402495f89c95a2e756",
+      "source_path": "src/models/adapter.py",
+      "url": "https://raw.githubusercontent.com/tyang816/SES-Adapter/ec5bf619d665435c161493402495f89c95a2e756/src/models/adapter.py",
+      "source_sha256": "300dae62a522de4a728774ea23411b0254f7e1cf26f1ea373fd2f68b66afb4b2",
+      "extracted_file": "ses_crossmodal.py",
+      "extracted_definitions": [
+        "rotate_half",
+        "apply_rotary_pos_emb",
+        "RotaryEmbedding",
+        "CrossModalAttention"
+      ],
+      "extracted_sha256": "9398300788c7cf4e47b9837e64a8b3c394b2b22c86d026dd1dbee31213c4cf83",
+      "definitions_modified": false
+    }
+  ],
+  "condition_encoding": "Sanitized cached single tokens; learned dimension-only bridge; original pair cache retained but not consumed",
+  "comparison_protocol": "Matched trainable capacity, fixed data and masks, native diffusion/loss, common wall-time budget and fixed evaluation protocol",
+  "source_method_transfer": true,
+  "original_source_domain_reproduction": false,
+  "ses_attention_dropout": 0.0,
+  "key_value_source": "Native first-layer normalized scalar features",
+  "fusion_kwargs": {
+    "hidden_width": 944
+  },
+  "parameter_match_target": 4027712,
+  "parameter_match_relative_tolerance": 0.005,
+  "parameter_match_relative_error": -0.0044769834585988155,
+  "parameter_match_policy": "Effective trainable parameters within 0.5%; no unused parameter padding; preserve injection topology and author fusion operations",
+  "method_id": "ses",
+  "method_name": "SES-Adapter",
+  "run_name": "ses-seed42",
+  "wandb_entity": null,
+  "wandb_project": "fusion-baselines",
+  "training_enabled": false
+}

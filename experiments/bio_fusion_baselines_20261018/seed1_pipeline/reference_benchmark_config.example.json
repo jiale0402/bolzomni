@@ -1,0 +1,47 @@
+{
+  "checkpoint": "reference/best_joint.pt",
+  "checkpoint_sha256": "<sha256>",
+  "data_dir": "data",
+  "output": "reference/benchmark",
+  "cache": "cache",
+  "runtime": {
+    "generation_python": "python",
+    "score_python": "python",
+    "anew_source": "source/AnewOmni",
+    "cbg_source": "source/CBGBench",
+    "pepglad_source": "source/PepGLAD",
+    "base_checkpoint": "assets/anewomni_official.ckpt",
+    "boltzgen_assets": "assets"
+  },
+  "base_checkpoint_sha256": "961599acb617b8baf742755b4416322979507c9814ebd1a1e8582cff9c0a74c1",
+  "benchmark_specs": [
+    {
+      "name": "lnr",
+      "targets": 93,
+      "manifest": "manifests/lnr.jsonl",
+      "manifest_sha256": "<sha256>"
+    },
+    {
+      "name": "rabd",
+      "targets": 60,
+      "manifest": "manifests/rabd.jsonl",
+      "manifest_sha256": "<sha256>"
+    },
+    {
+      "name": "crossdocked2020",
+      "targets": 100,
+      "manifest": "manifests/crossdocked2020.jsonl",
+      "manifest_sha256": "<sha256>"
+    }
+  ],
+  "samples": 30,
+  "batch_size": 10,
+  "gamma": 1.0,
+  "seed": 20260814,
+  "smoke": false,
+  "wandb_project": "fusion-baselines",
+  "wandb_entity": null,
+  "variant": "full",
+  "projection_width": 512,
+  "train_backbone": false
+}
